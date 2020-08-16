@@ -2170,3 +2170,13 @@ tr.theading{
     text-align: center;
     font-weight: bold;
 }
+
+table,tr,td{
+    border: 1px solid black;        
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
