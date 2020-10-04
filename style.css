@@ -14,16 +14,16 @@ img {
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
-a {
-    color: #262626;
+a:link{
+    color: #008000;
 }
 
 a:visited {
-    color: #757686;
+    color: #FFFF00;
 }
 
 a:hover, a:focus, a:active {
-    color: #262626;
+    color: #FF0000;
 }
 
 a:focus {
@@ -54,10 +54,9 @@ a:hover, a:active {
     padding: 20px 0;
     font-size: 12px;
     line-height: 1;
-    text-transform: uppercase;
+  
 }
 
-.header-bar-email a,
 .header-bar-text span {
     text-transform: lowercase;
     color: #fff;
