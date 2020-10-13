@@ -21,37 +21,41 @@
     			</style>
     		</head>
     		<body>
-				   		<h1 style="text-align:center;">Digital Gadgets</h1>
-                <div class='Gadgets' style="float:center;">
-                    <h2>List of Gadgets</h2>
+				   		<h1 style="text-align:center;">Rotary_Vasudha</h1>
+                <div class='Rotary_Vasudha' style="float:center;">
+                    <h2>Membership Details</h2>
                     <table border="2" align="center">
                         <tr bgcolor="skyblue">
+                            <th style="text-align:left">SNO</th>
+                            <th style="text-align:left">Membership_ID</th>
                             <th style="text-align:left">Name</th>
-                            <th style="text-align:left">Brand</th>
-                            <th style="text-align:left">Type</th>
-                            <th style="text-align:left">Model</th>
-                            <th style="text-align:left">Price</th>
-                            <th style="text-align:left">Warranty</th>
+                            <th style="text-align:left">Gender</th>
+                            <th style="text-align:left">DOB</th>
+                            <th style="text-align:left">Email_ID</th>
+                            <th style="text-align:left">Mobile</th>
                         </tr>
-                        <xsl:for-each select="Gadgets/Product">
+                        <xsl:for-each select="Rotary_Vasudha/Members">
                             <tr>
+                                <td>
+                                    <xsl:value-of select="SNO"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="Membership_ID"/>
+                                </td>
                                 <td>
                                     <xsl:value-of select="Name"/>
                                 </td>
                                 <td>
-                                    <xsl:value-of select="Brand"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Type"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Model"/>
+                                    <xsl:value-of select="Gender"/>
                                 </td>
                                  <td>
-                                    <xsl:value-of select="Price"/>
+                                    <xsl:value-of select="DOB"/>
                                 </td>
                                  <td>
-                                    <xsl:value-of select="Warranty"/>
+                                    <xsl:value-of select="Email_ID"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="Mobile"/>
                                 </td>
 
                             </tr>
