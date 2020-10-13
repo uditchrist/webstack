@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="GadgetStyle.xsl"?>
+<Gadgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="GadgetSchema.xsd">
+	
+	<Product>
+		<Name>iPhone 11 Pro Max</Name>
+		<Brand>Apple</Brand>
+		<Type>SmartPhones</Type>
+		<Model>A2220</Model>
+		<Price>140300</Price>
+		<Warranty>1 Year</Warranty>
+	</Product>
+
+	<Product>
+		<Name>oneplus 7 pro</Name>
+		<Brand>onePlus</Brand>
+		<Type>SmartPhones</Type>
+		<Model>GM1917</Model>
+		<Price>53000</Price>
+		<Warranty>1 Year</Warranty>
+	</Product>
+
+	<Product>
+		<Name>Ps4</Name>
+		<Brand>Sony</Brand>
+		<Type>Gamming Console</Type>
+		<Model>cuh-7215b</Model>
+		<Price>36990</Price>
+		<Warranty>6 Month</Warranty>
+	</Product>
+
+	<Product>
+		<Name>Mitsubishi 2 Ton 5 Star Ac</Name>
+		<Brand>Mitsubishi</Brand>
+		<Type>Air Conditioner</Type>
+		<Model>MS-GK24VA</Model>
+		<Price>58990</Price>
+		<Warranty>2 Year</Warranty>
+	</Product>
+
+	<Product>
+		<Name>Whirlpool 570 L Inverter Frost-Free Multi-Door Refrigerator</Name>
+		<Brand>Whirlpool</Brand>
+		<Type>Refrigerator</Type>
+		<Model>WS SBS 570 STEEL</Model>
+		<Price>62990</Price>
+		<Warranty>2 Year</Warranty>
+	</Product>
+
+	<Product>
+		<Name>Sony Bravia 4K Ultra HD LED TV</Name>
+		<Brand>Sony</Brand>
+		<Type>Television</Type>
+		<Model>TV 65X7400H Black</Model>
+		<Price>109999</Price>
+		<Warranty>1 Year</Warranty>
+	</Product>
+</Gadgets>

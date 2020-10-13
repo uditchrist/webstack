@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="Gadgets">
+		<xsd:complexType>
+		
+		<xsd:element name="Products">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="Name" type="xs:string"/>
+					<xsd:element name="Brand" type="xs:string"/>
+					<xsd:element name="Type" type="xs:string"/>
+					<xsd:element name="Model" type="xs:string"/>
+					<xsd:element name="Price" type="xs:integer"/>
+					<xsd:element name="Warranty">
+						<xsd:simpleType>
+    							<xsd:restriction base="xs:string">
+      								<xsd:enumeration value="6 Month"/>
+      								<xsd:enumeration value="1 Year"/>
+      								<xsd:enumeration value="2 Year"/>
+      								<xsd:enumeration value="3 Year"/>
+    							</xsd:restriction>
+  						</xsd:simpleType>	
+					</xsd:element>
+				</xsd:sequence>	
+			</xsd:complexType>
+		</xsd:element>
+
+	</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
