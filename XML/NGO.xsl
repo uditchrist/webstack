@@ -25,7 +25,7 @@
                 <div class='Rotary_Vasudha' style="float:center;">
                     <h2>Membership Details</h2>
                     <table border="2" align="center">
-                        <tr bgcolor="skyblue">
+                        <tr bgcolor="pink">
                             <th style="text-align:left">SNO</th>
                             <th style="text-align:left">Membership_ID</th>
                             <th style="text-align:left">Name</th>
