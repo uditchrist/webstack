@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>MUSIC FESTIVAL | LOGIN/SIGNUP </title>
+    <link rel = "icon" href = "image/logo.png" type = "image/x-icon">
+
+    <!-- <link rel="stylesheet" href="stylesss.css"> -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    
+<script src="java.js"></script>
+
+    
+  </head>
+  <body onload="document.registration.focus();">
+    
+
+
+	<body background="image/imm.jpg" link="#000" alink="#017bf5" vlink="#000">
+	<h3 align="center">
+	
+	
+	<div  class="header">
+    <a href="index.html">
+         <img alt="Back to home" src="image/logo.png">
+      </a>
+    <h1><strong>Fête de la Musique</strong></h1>
+    
+  </div>
+  
+  <hr>
+
+
+<div class="togglearea">
+	<label for="toggle">
+		<span></span>
+        <span></span>
+        <span></span>
+	</label>
+</div>
+
+
+<input type="checkbox" id="toggle">
+<div class="navbar">
+	<a href="index.html">HOME</a>
+	<a href="lab2.html">GETTING AROUND</a>
+	<a href="lab5.html">VIDEOS</a>
+	<a href="lab3.html">PHOTO GALLERY</a>
+	<a href="lab4.html">ABOUT US</a>
+	<a href="XML/Event.xml">Events (XML File)</a> 
+	
+	
+</div>
+
+  
+
+
+   <!--<div  class="header">
+    <a href="index.html">
+         <img alt="Back to home" src="logo.png">
+      </a>
+    <h1><strong>Fête de la Musique</strong></h1>
+    
+  </div>-->
+  
+  <hr>
+    <!--form area start-->
+    <div class="form">
+      <!--login form start-->
+      <form class="login-form" action="" method="post">
+        <i class="fas fa-user-circle"></i>
+        <input class="user-input" type="text" name="" placeholder="Username"  required>
+        <input class="user-input" type="password" name="" placeholder="Password"  required>
+        <div class="options-01">
+          <label class="remember-me"><input type="checkbox" name="">Remember me</label>
+          <a href="#">Forgot your password?</a>
+        </div>
+        <input class="btn" type="submit" name="" value="LOGIN" >
+        <div class="options-02">
+          <p>Not Registered? <a href="lab7.html">Create an Account</a></p>
+        </div>
+      </form>
+      <!--login form end-->
+      <!--signup form start-->
+     
+      <!--signup form end-->
+    </div>
+    <!--form area end-->
+
+    <script type="text/javascript">
+    $('.options-02 a').click(function(){
+      $('form').animate({
+        height: "toggle", opacity: "toggle"
+      }, "slow");
+    });
+    </script>
+
+  </body>
+</html>
+                           

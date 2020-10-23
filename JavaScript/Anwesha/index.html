@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> MUSIC FESTIVAL | Locations,Dates,Getting Around </title>
+	<link rel = "icon" href =  
+"image/logo.png" 
+        type = "image/x-icon"> 
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		.tag  {
+  border: 2px solid white;
+  margin: 10px;
+  padding: 10px;
+          }
+
+    body {
+  background-image: url('imm.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+   background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(imm.jpg);
+        }
+ 
+ a:hover {
+  
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  padding: 5px 5px;
+}	
+	
+  footer{
+ 	height: 100px;
+ 	background: #000;
+ 	padding: 50px;
+ 	text-align: left;
+ }
+ 
+
+
+
+	</style>
+</head>
+
+<body background="imm.jpg" link="#000" alink="#017bf5" vlink="#000">
+    <br /><br><br>
+    
+	<h3 align="center">
+	
+		<font face="Lato" color="FFFFFF" size="6">MUSIC FESTIVAL</font>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    
+			<font face="cinzel" color="FFFFFF" size="4">
+			<a id = "GFG" href="#"><font face="Lato" >VIDEOS</font></a> &nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+			<a id = "GFG" href="lab2.html"><font face="Lato" >GETTING AROUND</font></a> &nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+			<a id = "GFG" href="lab3.html"><font face="Lato" >PHOTO GALLERY</font></a> &nbsp; | &nbsp;&nbsp;&nbsp;
+			<a id = "GFG" href="#"><font face="Lato" >BEST TIME</font></a> &nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+			<a id = "GFG" href="lab4.html"><font face="Lato" >ABOUT US</font></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		</font>
+		
+		
+	<br><br>	
+	<hr>	
+	</h3>-->
+
+	<body background="image/imm.jpg" link="#000" alink="#017bf5" vlink="#000">
+	<h3 align="center">
+	
+	
+	<div  class="header">
+    <a href="index.html">
+         <img alt="Back to home" src="image/logo.png">
+      </a>
+    <h1><strong>Fête de la Musique</strong></h1>
+    
+  </div>
+  
+  <hr>
+
+
+<div class="togglearea">
+	<label for="toggle">
+		<span></span>
+        <span></span>
+        <span></span>
+	</label>
+</div>
+
+
+<input type="checkbox" id="toggle">
+<div class="navbar">
+	<a href="index.html">HOME</a>
+	<a href="lab2.html">GETTING AROUND</a>
+	<a href="lab5.html">VIDEOS</a>
+	<a href="lab3.html">PHOTO GALLERY</a>
+	<a href="lab4.html">ABOUT US</a>
+	<a href="XML/Event.xml">Events (XML File)</a> 
+	
+	
+</div>
+
+
+
+	<div class="about">
+	<p>
+	<font face="Lato" color="FFFFFF" size="3">Music has the power to heal the soul and pull distant hearts together. Listening to music on a phone or on television is the way to relax for many people. However, only a real music fan would understand the bliss of listening to music in a live concert. Music festivals are organised in various parts of India where singers and musicians from across the globe, showcase their talent. For travellers and music lovers, this proves as a golden opportunity as they get to explore new places along with enjoying the diverse mix of music.</font>
+	</p>
+	</div>
+
+	    
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="image/7.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="image/block.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="image/9.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="image/10.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+
+
+
+
+
+
+
+<br><br><br><br>
+
+
+	<div class="tag">
+		<h1 align="center">
+		<font face="Lato" color="#FFFFFF" size="8">
+			Music Festivals In India That Every Music Enthusiast Must Attend! 
+		</font>
+	</h1>	
+	</div>
+
+
+
+	 <div class="hero"> 
+		<h2> ARE YOU READY ?</h2>
+		<div class="button">
+    <a href="lab6.html" class="btn btn-one">BOOK NOW!</a>
+    <a href="" class="btn btn-two">EXPLORE MORE</a>
+ 		
+
+	</div>
+	</div>
+
+    
+	
+	<br /><br /><br /><br /><br /><br /><br /><br />
+
+	<h2 align="center">
+	<font face="Lato" color="#fff" size="3">For Notification Updates   ------> </font> &nbsp;
+	<a id = "GFG" href="#"><font face="Lato" color="#ffff00" size="3">SUBSCRIBE NOW</font> </a>
+	</h2>
+	<br /><br /><br /><br /><br />
+	
+
+
+	
+  <footer>
+    <p>
+      <font face="Lato" color="#fff" size="3"> Copyright &copy; 2020</font>
+      <br>
+    <br>
+    <a id = "GFG" href="#"><font face="Lato" color="#fff" size="3">FAQ</font> </a>
+    <br>
+    <br>
+    <a id = "GFG" href="#"><font face="Lato" color="#fff" size="3">Contact us</font></a>
+    <br>
+    <br>
+    <a id = "GFG" href="#"><font face="Lato" color="#fff" size="3">Help Centre</font></a>
+    <br><br>
+    </p>
+  </footer>
+
+</body>
+</html>
+		
+	
+
+
+
+</body>
+</html>
