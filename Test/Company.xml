@@ -9,38 +9,38 @@ and open the template in the editor.
       xsi:noNamespaceSchemaLocation="CompanySchema.xsd">
 
     <Employee id="emp1">
-        <Emp-name>Sam</Emp-name>
+        <Emp-name>Udit Gupta</Emp-name>
         <Emp-age>55</Emp-age>
         <Emp-salary>50000</Emp-salary>
-        <Emp-emailid>sam@gmail.com</Emp-emailid>
-        <Emp-phonenum>7874248419</Emp-phonenum>
+        <Emp-emailid>udit@gmail.com</Emp-emailid>
+        <Emp-phonenum>7891492201</Emp-phonenum>
         <Emp-designation>Developer</Emp-designation>
     </Employee>
 
     <Employee id="emp2">
-        <Emp-name>Souvik</Emp-name>
+        <Emp-name>Chirag Agarwal</Emp-name>
         <Emp-age>40</Emp-age>
-        <Emp-salary>140000</Emp-salary>
-        <Emp-emailid>souvik@gmail.com</Emp-emailid>
-        <Emp-phonenum>8511880971</Emp-phonenum>
+        <Emp-salary>150000</Emp-salary>
+        <Emp-emailid>chirag@gmail.com</Emp-emailid>
+        <Emp-phonenum>8765880971</Emp-phonenum>
         <Emp-designation>Manager</Emp-designation>
     </Employee>
 
 <Employee id="emp3">
-        <Emp-name>Pulkit</Emp-name>
+        <Emp-name>Dhruvu Bhatt</Emp-name>
         <Emp-age>39</Emp-age>
-        <Emp-salary>65000</Emp-salary>
-        <Emp-emailid>pulkit@gmail.com</Emp-emailid>
-        <Emp-phonenum>7511880971</Emp-phonenum>
+        <Emp-salary>55000</Emp-salary>
+        <Emp-emailid>dbs@gmail.com</Emp-emailid>
+        <Emp-phonenum>8876580971</Emp-phonenum>
         <Emp-designation>Assistant Manager</Emp-designation>
     </Employee>
     
     <Employee id="emp4">
-        <Emp-name>yash</Emp-name>
-        <Emp-age>47</Emp-age>
-        <Emp-salary>100000</Emp-salary>
-        <Emp-emailid>yash@gmail.com</Emp-emailid>
-        <Emp-phonenum>9374255925</Emp-phonenum>
+        <Emp-name>Ronak	Asawa</Emp-name>
+        <Emp-age>57</Emp-age>
+        <Emp-salary>200000</Emp-salary>
+        <Emp-emailid>ronakh@gmail.com</Emp-emailid>
+        <Emp-phonenum>9786950925</Emp-phonenum>
         <Emp-designation>Web Designer</Emp-designation>
     </Employee>
     
