@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<?xml-stylesheet type="text/xsl" href="CompanyStyle.xsl"?>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="CompanySchema.xsd">
+
+    <Employee id="emp1">
+        <Emp-name>Sam</Emp-name>
+        <Emp-age>55</Emp-age>
+        <Emp-salary>50000</Emp-salary>
+        <Emp-emailid>sam@gmail.com</Emp-emailid>
+        <Emp-phonenum>7874248419</Emp-phonenum>
+        <Emp-designation>Developer</Emp-designation>
+    </Employee>
+
+    <Employee id="emp2">
+        <Emp-name>Souvik</Emp-name>
+        <Emp-age>40</Emp-age>
+        <Emp-salary>140000</Emp-salary>
+        <Emp-emailid>souvik@gmail.com</Emp-emailid>
+        <Emp-phonenum>8511880971</Emp-phonenum>
+        <Emp-designation>Manager</Emp-designation>
+    </Employee>
+
+<Employee id="emp3">
+        <Emp-name>Pulkit</Emp-name>
+        <Emp-age>39</Emp-age>
+        <Emp-salary>65000</Emp-salary>
+        <Emp-emailid>pulkit@gmail.com</Emp-emailid>
+        <Emp-phonenum>7511880971</Emp-phonenum>
+        <Emp-designation>Assistant Manager</Emp-designation>
+    </Employee>
+    
+    <Employee id="emp4">
+        <Emp-name>yash</Emp-name>
+        <Emp-age>47</Emp-age>
+        <Emp-salary>100000</Emp-salary>
+        <Emp-emailid>yash@gmail.com</Emp-emailid>
+        <Emp-phonenum>9374255925</Emp-phonenum>
+        <Emp-designation>Web Designer</Emp-designation>
+    </Employee>
+    
+    <Employee id="emp5">
+        <Emp-name>Praneet</Emp-name>
+        <Emp-age>60</Emp-age>
+        <Emp-salary>200000</Emp-salary>
+        <Emp-emailid>praneet@gmail.com</Emp-emailid>
+        <Emp-phonenum>8511880971</Emp-phonenum>
+        <Emp-designation>Network Administrator</Emp-designation>
+    </Employee>
+
+</Company>
