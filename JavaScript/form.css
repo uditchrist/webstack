@@ -1,0 +1,48 @@
+
+    #main
+    {
+        width:650px;
+        height:550px;
+        border:1px solid black;
+        margin:auto;
+        background:#F3F3F3;
+        box-shadow:1px 1px 1px 1px grey;
+    }
+    h5{
+        text-align: center;
+        font-size: xx-large;
+    }
+    #row
+    {
+        width:99%;
+        height:40px;
+        border:1px solid #F3F3F3;
+        color: black;
+    }
+    .col
+    {
+        width:32%;
+        height:89%;
+        border:1px solid #F3F3F3;
+        float:left;
+        margin-left:2px;
+    }
+    input
+    {
+        height:30px;
+        width:200px;
+        border-radius:2px;
+    }
+    input{type=submit}
+    {
+        width:100px;
+    }
+    input:hover{border:1px solid red}
+    input:hover{background:gray}
+    input{font-size:25px}
+    .r
+    {
+    width:10px;
+    height:15px;
+    font-size:10px;
+    }

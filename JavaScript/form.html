@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Bank Registration form </title>
+    <link rel="stylesheet" href="form.css">
+
+   
+    </head>
+    <body>
+        
+        <div id="main">
+            <form onSubmit="return formValidation();" method="post" enctype="multipart/form-data">
+                <h5>Bank Registration Page</h5>
+                <div id="row">
+                    <div class="col">Customer ID</div>
+                    <div class="col"><input type="number" id="cid" placeholder="Customer ID" required  onkeypress="return chkNum(event,'error')" onblur="chkblnk('cid','error')"/></div>
+                    <div class="col" id="error" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">First Name</div>
+                    <div class="col"><input type="text" id="fnm" placeholder="First Name" required onkeypress="return chkAplha(event,'error1')" onblur="chkblnk('fnm','error1')"/></div>
+                    <div class="col" id="error1" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">Last Name</div>
+                    <div class="col"><input type="text" id="lnm" placeholder="Last Name" required onkeypress="return chkAplha(event,'error2')" onblur="chkblnk('lnm','error2')"/></div>
+                    <div class="col" id="error2" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">Type of Account</div>
+                    <div class="col"><select name="acc" id="acc" onblur="chkblnk('acc','error3')">
+                        <option value="">Select</option>
+                        <option value="Saving">Saving A/C</option>
+                        <option value="Current">Current A/C</option>
+                        <option value="Salary">Salary A/C</option>
+                        <option value="FD">FD A/C</option>
+                        <option value="RD">RD A/C</option>
+                        <option value="NRI">NRI A/C</option></select>
+                    </div>
+                    <div class="col" id="error3" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">Address</div>
+                    <div class="col"><textarea placeholder="Address" required id="add" onblur="chkblnk('add','error4')" ></textarea></div>
+                    <div class="col" id="error4" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">Email id</div>
+                    <div class="col"><input type="text" placeholder="Email ID" required id="e" onblur="chkeid()"/></div>
+                    <div class="col" id="error5" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">Phone No.</div>
+                    <!-- <div class="col"><input type="number" id="num" placeholder="Number" required onkeypress="return phonenumber()" onblur="chkblnk('num','error6')"/></div> -->
+                    <div class="col"><input type="number" id="num" placeholder="Number" required onblur="phonenumber()" /></div>
+                    <div class="col" id="error6" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">Address Proof</div>
+                    <div class="col"><input type="file" id="pr"  onblur="chkblnk('pr','error7')"/></div>
+                    <div class="col" id="error7" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col" ></div>
+                    <div class="col"><input type="submit" name="sb" value="Submit">
+                                     <input type="reset" name="sb" value="Reset">
+                    </div>
+                    <div class="col" id="error7" style="color:red"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script  src='form.js'></script>
+</html>
