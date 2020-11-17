@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Bank Registration form </title>
+   
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/font-awesome.min.css">
+     <link rel="stylesheet" href="../css/elegant-fonts.css">
+     <link rel="stylesheet" href="../css/themify-icons.css">
+     <link rel="stylesheet" href="../css/swiper.min.css">
+     <link rel="stylesheet" href="../style.css">
+     <link rel="stylesheet" href="form.css">
+   
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container">
+                    <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                        <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                           
+                            <div class="header-bar-email">
+                              E-Mail: <a href="#">udit.ukg@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+                            
+                            <div class="header-bar-text">
+                                <p>PHONE: <span>+91 78914 92201</span></p>
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+    
+                        <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="donate-btn">
+                                <a href="adminlogin.php">Sign in</a>
+                            </div><!-- .donate-btn -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .top-header-bar -->
+    
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-14 d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="site-branding d-flex align-items-center">
+                               <a class="d-block" href="index.html" rel="home"><img class="d-block" width=500 src="../images/logo.png" alt="logo"></a>
+                            </div><!-- .site-branding -->
+    
+                            <nav class="site-navigation d-flex justify-content-end align-items-center">
+                                <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="../aboutus.html">About us</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="../XML/NGO.xml">Members (XML)</a></li>
+                                    <li class="current-menu-item"><a href="../Registration/form.html">Members Registration</a></li>
+                                    <li><a href="#">Awards</a></li>
+                                    <li><a href="#">Scrapbooks</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </nav><!-- .site-navigation -->
+    
+                            <div class="hamburger-menu d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div><!-- .hamburger-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+            <script>
+                window.oncontextmenu = function () {
+                            return false;
+                        }
+                        $(document).keydown(function (event) {
+                            if (event.keyCode == 123) {
+                                return false;
+                            }
+                            else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                                return false;
+                            }
+                        });
+                    </script>
+        </header><!-- .site-header -->
+
+        <div id="main">
+            <form onSubmit="return formValidation();" method="post" enctype="multipart/form-data">
+                <h5>Member Registration Form</h5>
+                <div id="row">
+                    <div class="col">Member ID</div>
+                    <div class="col"><input type="number" id="cid" placeholder="Customer ID" required  onkeypress="return chkNum(event,'error')" onblur="chkblnk('cid','error')"/></div>
+                    <div class="col" id="error" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">First Name</div>
+                    <div class="col"><input type="text" id="fnm" placeholder="First Name" required onkeypress="return chkAplha(event,'error1')" onblur="chkblnk('fnm','error1')"/></div>
+                    <div class="col" id="error1" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">Last Name</div>
+                    <div class="col"><input type="text" id="lnm" placeholder="Last Name" required onkeypress="return chkAplha(event,'error2')" onblur="chkblnk('lnm','error2')"/></div>
+                    <div class="col" id="error2" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">Designation</div>
+                    <div class="col"><select name="acc" id="acc" onblur="chkblnk('acc','error3')">
+                        <option value="">Select</option>
+                        <option value="President">President</option>
+                        <option value="Secretary">Secretary</option>
+                        <option value="Treasurer">Treasurer</option>
+                        <option value="Member">Member</option>
+                        <option value="Volunteer">Volunteer</option>
+                    </div>
+                    <div class="col" id="error3" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">Address</div>
+                    <div class="col"><textarea placeholder="Address" required id="add" onblur="chkblnk('add','error4')" ></textarea></div>
+                    <div class="col" id="error4" style="color:red"></div>
+                </div><br><br>
+                <div id="row">
+                    <div class="col">Email id</div>
+                    <div class="col"><input type="text" placeholder="Email ID" required id="e" onblur="chkeid()"/></div>
+                    <div class="col" id="error5" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">Phone No.</div>
+                    <!-- <div class="col"><input type="number" id="num" placeholder="Number" required onkeypress="return phonenumber()" onblur="chkblnk('num','error6')"/></div> -->
+                    <div class="col"><input type="number" id="num" placeholder="Number" required onblur="phonenumber()" /></div>
+                    <div class="col" id="error6" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col">Address Proof</div>
+                    <div class="col"><input type="file" id="pr"  onblur="chkblnk('pr','error7')"/></div>
+                    <div class="col" id="error7" style="color:red"></div>
+                </div>
+                <div id="row">
+                    <div class="col" ><button type="submit" name="sb">SUBMIT</div>
+                    <div class="col"><button type="reset" name="rs" >RESET</div>
+                    <div class="col" id="error7" style="color:red"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script  src='form.js'></script>
+    <script  src='../js/jquery.js'></script>
+    <script  src='../js/jquery.collapsible.min.js'></script>
+    <script  src='../js/swiper.min.js'></script>
+    <script  src='../js/jquery.countdown.min.js'></script>
+    <script  src='../js/circle-progress.min.js'></script>
+    <script  src='../js/jquery.countTo.min.js'></script>
+    <script  src='../js/jquery.barfiller.js'></script>
+    <script  src='../js/custom.js'></script>
+</html>
