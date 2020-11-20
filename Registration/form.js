@@ -1,36 +1,39 @@
+// function formValidation()
+// {
+//       var phoneno = /^\d{10}$/;
+
+//         var x=document.getElementById("num").value;
+        
+//         if((x.match(phoneno)))
+//               {
+//                 document.getElementById("error6").innerHTML="";
+//                 return true;
+//               }
+//             else
+//               {
+//                 document.getElementById("error6").innerHTML="invalid Mobile Number";
+//                 return false;
+//               }           
+// }
+
 function formValidation()
 {
-    
-    if(chkblnk(eid,errid))
-    {
-        alert('Form Successfully Submitted'); 
-    }
-    else
-    {
-        alert('Form not Submitted'); 
-    }
-    // if(chkblnk(eid,errid))
-    // {
-        
-       
-        // if(chkAplha(event,err))
-        // {
-            
-        //     if(chkNum(event,err))
-        //     {
-        //         if(chkeid())
-        //         {
-        //             if(phonenumber())
-        //             {
-        //                 alert('Form Successfully Submitted'); 
-        //             }
-        //         }
-                        
-        //     }
-        // }
-    // }
+      var phoneno = /^\d{10}$/;
 
-// return false;
+        var x=document.getElementById("num").value;
+        var e=document.getElementById("e").value;
+        var atpos=e.indexOf("@");
+        var dotpos=e.lastIndexOf(".");
+        
+        if((!x.match(phoneno)))
+        {
+            return false;
+        }   
+        if(atpos<4 || dotpos<atpos+3)
+        {
+            return false;
+        }
+        // return true;
 }
     
     
@@ -40,11 +43,12 @@ function formValidation()
         if(x=="")
         {
             document.getElementById(errid).innerHTML="Please fill this field";
+            return false;
         }
         else
         {
             document.getElementById(errid).innerHTML="";
-            return true;
+            return false;
         }
     }
     
@@ -78,6 +82,7 @@ function formValidation()
         if(atpos<4 || dotpos<atpos+3)
         {
             document.getElementById("error5").innerHTML="invalid email";
+            return false;
         }
         else
         {
@@ -87,12 +92,7 @@ function formValidation()
 
     }
     
-    function myFunction() {
-        window.location.reload();
-        alert("The form was submitted successfully!");
-      }
-
-      function phonenumber(){
+   function phonenumber(){
         var phoneno = /^\d{10}$/;
 
         var x=document.getElementById("num").value;
@@ -105,5 +105,7 @@ function formValidation()
             else
               {
                 document.getElementById("error6").innerHTML="invalid Mobile Number";
+                return false;
               }
       }
+

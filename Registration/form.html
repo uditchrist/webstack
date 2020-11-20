@@ -87,7 +87,7 @@
         </header><!-- .site-header -->
 
         <div id="main">
-            <form onSubmit="return formValidation();" method="post" enctype="multipart/form-data">
+            <form action="../index.html" onSubmit="return formValidation();" enctype="multipart/form-data">
                 <h5>Member Registration Form</h5>
                 <div id="row">
                     <div class="col">Member ID</div>
@@ -123,7 +123,7 @@
                 </div><br><br>
                 <div id="row">
                     <div class="col">Email id</div>
-                    <div class="col"><input type="text" placeholder="Email ID" required id="e" onblur="chkeid()"/></div>
+                    <div class="col"><input type="text" placeholder="Email ID" required id="eid" onblur="chkeid()"/></div>
                     <div class="col" id="error5" style="color:red"></div>
                 </div>
                 <div id="row">
@@ -140,7 +140,6 @@
                 <div id="row">
                     <div class="col" ><button type="submit" name="sb">SUBMIT</div>
                     <div class="col"><button type="reset" name="rs" >RESET</div>
-                    <div class="col" id="error7" style="color:red"></div>
                 </div>
             </form>
         </div>
