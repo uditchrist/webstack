@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+            
+            td
+            {
+                font-size:larger;
+                padding:20px;
+                text-align:center !important;
+            }
+            th
+            {
+                font-size:larger;
+                padding:20px;
+                text-align:center !important;
+                background-color: pink;
+            }
+           
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Membership Details</h1>
+    <button type="button" onclick="XML()">Members</button>
+    <br><br>
+    <table align="center" border="5" id="demo"></table>
+    <script>
+        function XML()
+        {
+            var xhttp=new XMLHttpRequest();
+            xhttp.onreadystatechange=function()
+            {
+                if(this.readyState==4 && this.status==200)
+                {
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET","NGO.xml",true);
+            xhttp.send();
+        }
+        function myFunction(xml)
+        {
+            var i;
+            var xmlDoc=xml.responseXML;
+            var t="<tr><th>Sno.</th><th>Membership ID</th><th>Name</th><th>Gender</th><th>DOB</th><th>Email ID</th><th>Mobile</th></tr>";
+            var x=xmlDoc.getElementsByTagName("Members");
+            for(i=0;i<x.length;i++)
+            {
+                t +="<tr><td>" +
+                x[i].getElementsByTagName("SNO")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("Membership_ID")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("Gender")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("DOB")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("Email_ID")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("Mobile")[0].childNodes[0].nodeValue +
+                "</td></tr>";
+            }
+            document.getElementById("demo").innerHTML=t;
+        }
+    </script>
+</body>
+</html>
