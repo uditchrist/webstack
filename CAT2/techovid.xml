@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="techovid.xsl"?>
+<CHRIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<CS>
+		<STU-NAME>Udit Gupta</STU-NAME>
+		<STU-BRANCH>Bangalore</STU-BRANCH>
+		<STU-COLLEGE>Christ University</STU-COLLEGE>
+		<STU-EMAIL>udit.ukg@gmail.com</STU-EMAIL>
+	</CS>
+    <CS>
+		<STU-NAME>Mitali Khandelwal</STU-NAME>
+		<STU-BRANCH>Udaipur</STU-BRANCH>
+		<STU-COLLEGE>MLSU, Udaipur</STU-COLLEGE>
+		<STU-EMAIL>mitali@gmail.com</STU-EMAIL>
+	</CS>
+    <CS>
+		<STU-NAME>Aparna Gaba</STU-NAME>
+		<STU-BRANCH>Jaipur</STU-BRANCH>
+		<STU-COLLEGE>JECRC, Jaipur</STU-COLLEGE>
+		<STU-EMAIL>aparna@gmail.com</STU-EMAIL>
+	</CS>	
+</CHRIST>

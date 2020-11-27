@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form | Techovid 2020</title>
+    <link rel="stylesheet" href="techovid.css">
+</head>
+<body>
+
+
+    <div id="main">
+        <form action="techovid.html" onSubmit="return formValidation();" enctype="multipart/form-data">
+            <h5>Techovid Registration Form</h5>
+           
+            <div id="row">
+                <div class="col">Name</div>
+                <div class="col"><input type="text" id="name" placeholder="Enter you Name" required onkeypress="return chkAplha(event,'error1')" onblur="chkblnk('name','error1')"/></div>
+                <div class="col" id="error1" style="color:red"></div>
+            </div>
+            <div id="row">
+                <div class="col">Email</div>
+                <div class="col"><input type="email" placeholder="Enter Email ID" required id="eid" onblur="chkblnk('eid','error2')"/></div>
+                <div class="col" id="error2" style="color:red"></div>
+            </div>
+            <div id="row">
+                <div class="col">Branch</div>
+                <div class="col"><input type="text" id="branch" placeholder="Enter Branch" required  onblur="chkblnk('branch','error3')"/></div>
+                <div class="col" id="error3" style="color:red"></div>
+            </div>
+            <div id="row">
+                <div class="col">College/University Name</div>
+                <div class="col"><input type="text" id="college" placeholder="Enter College/University" required  onblur="chkblnk('college','error4')"/></div>
+                <div class="col" id="error4" style="color:red"></div>
+            </div>
+            <div id="row">
+                <div class="col">State</div>
+                <div class="col"><input type="text" id="state" placeholder="Enter State" required onblur="chkblnk('state','error5')"/></div>
+                <div class="col" id="error5" style="color:red"></div>
+            </div>
+            <div id="row">
+                <div class="col">Address</div>
+                <div class="col"><textarea placeholder="Address" required id="add" onblur="chkblnk('add','error6')" ></textarea></div>
+                <div class="col" id="error6" style="color:red"></div>
+            </div>
+            <div id="row">
+                <div class="col">Age</div>
+                <div class="col"><input type="number" id="age" placeholder="Enter Age" required  onkeypress="return chkage(event,'error7')" onblur="chkblnk('age','error7')"/></div>
+                <div class="col" id="error7" style="color:red"></div>
+            </div>
+                        
+            <div id="row">
+                <div class="col">Phone No.</div>
+                <div class="col"><input type="number" id="num" placeholder="Number" required onkeypress="return chkNum(event,'error8')" onblur="chkblnk('num','error8')"/></div>
+                <!-- <div class="col"><input type="number" id="num" placeholder="Number" required onblur="phonenumber()" /></div> -->
+                <div class="col" id="error8" style="color:red"></div>
+            </div>
+            
+            <div id="row">
+                <div class="col">Username</div>
+                <div class="col"><input type="text" id="usr" placeholder="Username" required onkeypress="return chkAplha(event,'error9')" onblur="chkblnk('usr','error9')"/></div>
+                <div class="col" id="error9" style="color:red"></div>
+            </div>
+
+            <div id="row">
+                <div class="col">Password</div>
+                <div class="col"><input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter you Password" required onblur="chkblnk('pass','error10')"/></div>
+                <div class="col" id="error10" style="color:red"></div>
+                
+            </div>
+            <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+            <div id="row">
+                <div class="col">Confirm Password</div>
+                <div class="col"><input type="password" id="cpass" placeholder="Confirm your Password" required onblur="matchPassword()"/></div>
+                <div class="col" id="error11" style="color:red"></div>
+            </div>
+
+
+
+            <div id="row">
+                <div class="col" ><button type="submit" name="sb">SUBMIT</div>
+                <div class="col"><button type="reset" name="rs" >RESET</div>
+            </div>
+
+            
+        </form>
+    </div>
+    
+</body>
+<script src='techovid.js'></script>
+</html>
