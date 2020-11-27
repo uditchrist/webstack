@@ -5,29 +5,39 @@ function formValidation()
 
         var x=document.getElementById("num").value;
         var y= document.getElementById("usr").value;
+        var pw1 = document.getElementById("psw").value;  
+        var pw2 = document.getElementById("cpass").value; 
          
-        if((x.match(phoneno)) && (y.match(user)))
-              {
-                alert("Form Submitted Successfully!");
-                return true;
-                
-              }
-            else
+        if(!(x.match(phoneno)) )
               {
                 document.getElementById("error8").innerHTML="invalid Mobile Number!";
+                return false;
+                
+              }
+            else if(!(y.match(user)))
+            {
                 document.getElementById("error9").innerHTML="invalid User, First character should be Capital.";
                 return false;
+            }
+            else if(pw1 != pw2)
+            {
+              document.getElementById("error11").innerHTML="Password did not match!"; 
+              return false;
+            }
+            else  {
+              alert("Form Submmitted Successfully!"); 
+                return true;
               }     
     
             
 }
 
 function matchPassword() {  
-    var pw1 = document.getElementById("psw");  
-    var pw2 = document.getElementById("cpass");  
+    var pw1 = document.getElementById("psw").value;  
+    var pw2 = document.getElementById("cpass").value;  
     if(pw1 != pw2)  
     {   
-     document.getElementById("error11").innerHTML="Password did not match!";  
+      document.getElementById("error11").innerHTML="Password did not match!";
     } 
     else 
     {  
