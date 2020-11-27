@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
@@ -25,16 +26,16 @@
 </head>
 <body>
     <h1 style="text-align:center;">Membership Details</h1>
-    <button type="button" onclick="loadXML()">Members</button>
+    <button type="button" onclick="XML()">Members</button>
     <br><br>
     <table align="center" border="5" id="demo"></table>
     <script>
-        function loadXML()
+        function XML()
         {
             var xhttp=new XMLHttpRequest();
             xhttp.onreadystatechange=function()
             {
-                if(this.readyState==4&&this.status==200)
+                if(this.readyState==4 && this.status==200)
                 {
                     myFunction(this);
                 }

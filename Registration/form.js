@@ -1,40 +1,40 @@
-// function formValidation()
-// {
-//       var phoneno = /^\d{10}$/;
-
-//         var x=document.getElementById("num").value;
-        
-//         if((x.match(phoneno)))
-//               {
-//                 document.getElementById("error6").innerHTML="";
-//                 return true;
-//               }
-//             else
-//               {
-//                 document.getElementById("error6").innerHTML="invalid Mobile Number";
-//                 return false;
-//               }           
-// }
-
 function formValidation()
 {
       var phoneno = /^\d{10}$/;
 
         var x=document.getElementById("num").value;
-        var e=document.getElementById("e").value;
-        var atpos=e.indexOf("@");
-        var dotpos=e.lastIndexOf(".");
         
-        if((!x.match(phoneno)))
-        {
-            return false;
-        }   
-        if(atpos<4 || dotpos<atpos+3)
-        {
-            return false;
-        }
-        // return true;
+        if((x.match(phoneno)))
+              {
+                document.getElementById("error6").innerHTML="";
+                return true;
+              }
+            else
+              {
+                document.getElementById("error6").innerHTML="invalid Mobile Number";
+                return false;
+              }           
 }
+
+// function formValidation()
+// {
+//       var phoneno = /^\d{10}$/;
+
+//         var x=document.getElementById("num").value;
+//         var e=document.getElementById("e").value;
+//         var atpos=e.indexOf("@");
+//         var dotpos=e.lastIndexOf(".");
+        
+//         if((!x.match(phoneno)))
+//         {
+//             return false;
+//         }   
+//         if(atpos<4 || dotpos<atpos+3)
+//         {
+//             return false;
+//         }
+//         // return true;
+// }
     
     
     
