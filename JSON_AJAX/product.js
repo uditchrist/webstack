@@ -1,12 +1,12 @@
 angular.module('myapp',[])
 .controller('myctrl',function($scope)
 {
-    // var d=;
+
     $scope.listMembers=[
-        {id:'101',name:'Udit Gupta',gender:'Male',dob:new Date("July 21,1998").toISOString().slice(0, 10),mobile:7891492201},
-        {id:'102',name:'Sopan Sharma',gender:'Male',dob:new Date("November 11,1999").toISOString().slice(0, 10),mobile:785412664},
-        {id:'103',name:'Kavish Meena',gender:'Male',dob:new Date("July 27,1999").toISOString().slice(0, 10),mobile:781588996},
-        {id:'104',name:'Aparna gaba',gender:'Female',dob:new Date("December 10,1998").toISOString().slice(0, 10),mobile:781166999},
+        {id:'101',name:'Udit Gupta',gender:'Male',dob:new Date("July 21,1998").toISOString().slice(0, 10),age:40,mobile:7891492201},
+        {id:'102',name:'Sopan Sharma',gender:'Male',dob:new Date("November 11,1999").toISOString().slice(0, 10),age:50,mobile:785412664},
+        {id:'103',name:'Kavish Meena',gender:'Male',dob:new Date("July 27,1999").toISOString().slice(0, 10),age:10,mobile:781588996},
+        {id:'104',name:'Aparna gaba',gender:'Female',dob:new Date("December 10,1998").toISOString().slice(0, 10),age:19,mobile:781166999},
     ];
     $scope.save=function()
     {
@@ -48,4 +48,6 @@ angular.module('myapp',[])
             $scope.listMembers.splice(index,1);
         }
     };
+
+ 
 });

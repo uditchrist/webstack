@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./Angular/style.css">
+</head>
+<body ng-app="angular_filter">
+
+  
+
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                       
+						<div class="header-bar-email">
+                            E-Mail: <a href="#">udit.ukg@gmail.com</a>
+                          </div><!-- .header-bar-email -->
+						
+                        <div class="header-bar-text">
+                            <p>gender: <span>+91 78914 92201</span></p>
+                        </div><!-- .header-bar-text -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                        <div class="donate-btn">
+                            <a href="adminlogin.php">Sign in</a>
+                        </div><!-- .donate-btn -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-14 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                           <a class="d-block" href="index.html" rel="home"><img class="d-block" width=80% src="images/logo.png" alt="logo"></a>
+                        </div><!-- .site-branding -->
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li ><a href="index.html">Home</a></li>
+                                <li ><a href="aboutus.html">About us</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Members</a></li>
+                                <li><a href="json.html">Members Update (JSON)</a></li>
+                                <li  class="current-menu-item" ><a href="filter.html">Angular JS (Filter)</a></li> 
+                                <li><a href="#">Awards</a></li>
+                                <li><a href="#">Scrapbooks</a></li>
+							    <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+        
+    </header><!-- .site-header -->
+  <div ng-controller="filter_controller ">
+
+    
+    
+    <!-- Rows to Display:<input type="number" step="1" min="0" max="5" ng-model="rowlimit" />
+    <br \>
+    <br \> -->
+    <hr/>
+    <button ng-click="propertyName = null; reverse = false">Set to unsorted</button>
+    <hr/>
+    <p class="center">Rows to Display:<input type="number" step="1" min="0" max="5" ng-model="rowlimit" />
+    <br \>
+    <br \></p>
+    <table class="members">
+      <tr>
+        <th>
+          <button ng-click="sortBy('id')">ID</button>
+          <span class="sortorder" ng-show="propertyName === 'id'" ng-class="{reverse: reverse}"></span>
+        </th>
+        <th>
+          <button ng-click="sortBy('name')">Name</button>
+          <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+        </th>
+        <th>
+          <button ng-click="sortBy('gender')">Gender</button>
+          <span class="sortorder" ng-show="propertyName === 'gender'" ng-class="{reverse: reverse}"></span>
+        </th>
+        <th>
+          <button ng-click="sortBy('age')">Age</button>
+          <span class="sortorder" ng-show="propertyName === 'age'" ng-class="{reverse: reverse}"></span>
+        </th>
+        <th>
+          <button >Mobile</button>
+          <span class="sortorder" ng-show="propertyName === 'mobile'" ng-class="{reverse: reverse}"></span>
+        </th>
+      </tr>
+      <tr ng-repeat="member in members | orderBy:propertyName:reverse | limitTo:rowlimit |filter:Search ">
+        <td>{{member.id}}</td>
+        <td>{{member.name | uppercase}}</td>
+        <td>{{member.gender | lowercase}}</td>
+        <td>{{member.age}}</td>
+        <td>{{member.mobile}}</td>
+      </tr>
+    </table>
+    <pre class="center">Sort by = {{propertyName}}; reverse = {{reverse}}</pre>
+ 
+  </div>
+  <div class="center">
+ 
+   
+  Search:<input type="text" placeholder="Seach anything" ng-model="Search" />
+  <br \>
+   <br \>
+
+
+  </div>
+ 
+  
+
+ 
+</body>
+<div class="footer-bar">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <p class="m-0">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed by <a href="https://www.facebook.com/udit.ukg/"> @UDIT GUPTA</a>
+</p>
+          </div><!-- .col-12 -->
+      </div><!-- .row -->
+  </div><!-- .container -->
+</div><!-- .footer-bar -->
+</footer><!-- .site-footer -->
+<script src="./Angular/angular.min.js"></script>
+<script src='./Angular/script.js'></script>
+<!-- <script src='./Angular/protractor.js'></script> -->
+</html>
+
+
