@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Aboutus | Rotary Vasudha</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
+ 
+    </head>
+
+<body ng-app="myapp" ng-controller="myctrl">
+
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                       
+						<div class="header-bar-email">
+                            E-Mail: <a href="#">udit.ukg@gmail.com</a>
+                          </div><!-- .header-bar-email -->
+						
+                        <div class="header-bar-text">
+                            <p>PHONE: <span>+91 78914 92201</span></p>
+                        </div><!-- .header-bar-text -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                        <div class="donate-btn">
+                            <a href="adminlogin.php">Sign in</a>
+                        </div><!-- .donate-btn -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-14 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                           <a class="d-block" href="index.html" rel="home"><img class="d-block" width=80% src="images/logo.png" alt="logo"></a>
+                        </div><!-- .site-branding -->
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li ><a href="index.html">Home</a></li>
+                                <li ><a href="aboutus.html">About us</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Members</a></li>
+                                <li class="current-menu-item"><a href="json.html">Members Update (JSON)</a></li>
+                                <li><a href="#">Awards</a></li>
+                                <li><a href="#">Scrapbooks</a></li>
+							    <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+        
+    </header><!-- .site-header -->
+    
+    <section>    
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Membership Details</h1>
+                    
+                </div><!-- .col-12 -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section>
+
+        <table align='center' cellpadding="2" cellspacing="2" border="1">
+            <tr>
+                <th>Serial No.</th>
+                <th>Membership_ID</th>
+                <th>NAME</th>
+                <th>Gender</th>
+                <th>DOB</th>
+                <th>Mobile</th>
+                <th>Button</th>
+            </tr>
+            <tr ng-repeat="member in listMembers">
+                <td>{{$index}}</td>
+                <td>{{member.id}}</td>
+                <td>{{member.name}}</td>
+                <td>{{member.gender}}</td>
+                <td>{{member.dob}}</td>
+                <td>{{member.mobile}}</td>
+                <td>
+                    <a href="#" ng-click="delete()">Delete</a> |
+                    <a href="#" ng-click="edit(member.id)">Edit</a>
+                </td>
+            </tr>
+        </table>
+        <h3>Membership Information</h3>
+        <table align='center' cellpadding="2" cellspacing="2">
+            <tr>
+                <td>ID</td>
+                <td><input type="text" ng-model="id"></td>
+            </tr>
+            <tr>
+                <td>NAME</td>
+                <td><input type="text" ng-model="name"></td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td><input type="text" ng-model="gender"></td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td><input type="text" ng-model="dob"></td>
+            </tr>
+            <tr>
+                <td>MOBILE</td>
+                <td><input type="text" ng-model="mobile"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="button" value="ADD" ng-click="add()">
+                <input type="button" value="SAVE" ng-click="save()"></td>
+            </tr>
+        </table>
+        
+  
+                       
+
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="m-0">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed by <a href="https://www.facebook.com/udit.ukg/"> @UDIT GUPTA</a>
+</p>
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+  
+
+</body>
+
+<script src="./JSON_AJAX/angular.min.js"></script>
+<script src="./JSON_AJAX/product.js"></script>
+</html>
