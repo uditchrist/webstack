@@ -1,5 +1,32 @@
-angular.module('myapp',[])
-.controller('myctrl',function($scope)
+angular.module('app',['ngRoute'])
+.config(function($routeProvider){
+    $routeProvider.when('/',{
+        templateUrl:'about.html'
+    }).when('/home',{
+        templateUrl:'home.html',
+        controller:'homectrl'}).when('/home/:first/:last',{
+            templateUrl:'home.html',
+            controller:'homectrl'
+        }).when('/contact',{
+        templateUrl:'contact.html'
+    })
+    .otherwise({redirectTo:'/'})
+})
+.controller('mainController',function(){
+
+})
+.controller('homectrl',function($scope,$routeParams) {
+    $scope.message="Hello Welcome"
+    if($routeParams.first&&$routeParams.last)
+ {
+    $scope.person={
+       first:$routeParams.first,
+       last:$routeParams.last,
+    };
+ }
+ })
+
+ .controller('myctrl',function($scope)
 {
 
     $scope.listMembers=[
