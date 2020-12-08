@@ -1,14 +1,14 @@
 angular.module('app',['ngRoute'])
 .config(function($routeProvider){
     $routeProvider.when('/',{
-        templateUrl:'about.html'
+        templateUrl:'../aboutus.html'
     }).when('/home',{
-        templateUrl:'home.html',
+        templateUrl:'../json.html',
         controller:'homectrl'}).when('/home/:first/:last',{
             templateUrl:'home.html',
             controller:'homectrl'
         }).when('/contact',{
-        templateUrl:'contact.html'
+        templateUrl:'../Registration/form.html'
     })
     .otherwise({redirectTo:'/'})
 })

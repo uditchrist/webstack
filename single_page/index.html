@@ -11,12 +11,12 @@
    
     <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js">
     </script>
-    <script src="../JSON_AJAX/product.js"></script>
-    <!-- <script src="single.js"></script> -->
+    <!-- <script src="../JSON_AJAX/product.js"></script> -->
+    <script src="single.js"></script>
     
 </head>
-<!-- <body ng-app="app" ng-controller="mainController" > -->
-    <body ng-app="myapp" ng-controller="myctrl" >
+<body ng-app="app" ng-controller="mainController" >
+    <!-- <body ng-app="myapp" ng-controller="myctrl" > -->
     <header class="site-header">
         <div class="top-header-bar">
             <div class="container">
@@ -81,76 +81,15 @@
         <ul>
             <li>
                 <a href="#/">ABOUT</a>
-                <a href="#/home">HOME</a>
-                <a href="#/contact">CONTACT</a>
+                <a href="#/home">Member</a>
+                <a href="#/contact">Member Registration</a>
             </li>
         </ul>
         <div ng-view></div>
 
 
   
-        <section>    
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1>Membership Details</h1>
-                        
-                    </div><!-- .col-12 -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </section>
-    
-            <table align='center' cellpadding="2" cellspacing="2" border="1">
-                <tr>
-                    <th>Serial No.</th>
-                    <th>Membership_ID</th>
-                    <th>NAME</th>
-                    <th>Gender</th>
-                    <th>DOB</th>
-                    <th>Mobile</th>
-                    <th>Button</th>
-                </tr>
-                <tr ng-repeat="member in listMembers">
-                    <td>{{$index}}</td>
-                    <td>{{member.id}}</td>
-                    <td>{{member.name}}</td>
-                    <td>{{member.gender}}</td>
-                    <td>{{member.dob}}</td>
-                    <td>{{member.mobile}}</td>
-                    <td>
-                        <a href="#" ng-click="delete()">Delete</a> |
-                        <a href="#" ng-click="edit(member.id)">Edit</a>
-                    </td>
-                </tr>
-            </table>
-            <h3>Membership Information</h3>
-            <table align='center' cellpadding="2" cellspacing="2">
-                <tr>
-                    <td>ID</td>
-                    <td><input type="text" ng-model="id"></td>
-                </tr>
-                <tr>
-                    <td>NAME</td>
-                    <td><input type="text" ng-model="name"></td>
-                </tr>
-                <tr>
-                    <td>GENDER</td>
-                    <td><input type="text" ng-model="gender"></td>
-                </tr>
-                <tr>
-                    <td>DOB</td>
-                    <td><input type="text" ng-model="dob"></td>
-                </tr>
-                <tr>
-                    <td>MOBILE</td>
-                    <td><input type="text" ng-model="mobile"></td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td><input type="button" value="ADD" ng-click="add()">
-                    <input type="button" value="SAVE" ng-click="save()"></td>
-                </tr>
-            </table>
+        
 
     
 
